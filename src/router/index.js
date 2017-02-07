@@ -1,4 +1,3 @@
-
 import Vue from 'vue'
 import Resource from 'vue-resource'
 import NProgress from 'nprogress'
@@ -18,28 +17,13 @@ Vue.http.interceptors.push((request, next) => {
 const router =  new Router({
   mode: 'hash',
   routes: [
-    {
-      path: '/',
-      title:'定时任务列表',
-      component(resolve){
-        require (['../components/cronList/index.vue'], resolve);
-      }
-    },
-    {
-      path: '/cron',
-      title:'定时任务列表',
-      component(resolve){
-        require (['../components/cronList/index.vue'], resolve);
-      }
-    },
-    {
-      path: '/host',
-      title:'服务器列表',
-      name: 'host',
-      component(resolve){
-        require (['../components/hostList/index.vue'], resolve);
-      }
-    }
+    // {
+    //   path: '/',
+    //   title:'定时任务列表',
+    //   component(resolve){
+    //     require (['../pages/cronList/index.vue'], resolve);
+    //   }
+    // }
   ]
 })
 
