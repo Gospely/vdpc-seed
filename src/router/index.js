@@ -1,6 +1,3 @@
-/**
- * Created by Moment on 2016/10/30.
- */
 
 import Vue from 'vue'
 import Resource from 'vue-resource'
